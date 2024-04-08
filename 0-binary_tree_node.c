@@ -3,7 +3,7 @@
 /**
  * binary_tree_node - fction create a node
  * @parent: parent node
- * @value: value 
+ * @value: value
  * Return: new node created
  */
 
@@ -19,6 +19,6 @@ new_node->n = value;
 new_node->parent = parent;
 new_node->left = NULL;
 new_node->right = NULL;
- 
+
 return (new_node);
- 
+}
