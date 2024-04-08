@@ -14,15 +14,15 @@ binary_tree_t *replace_right_node;
 if (parent == NULL)
 return (NULL);
 
-replace_right_node = binary_tree_node(parent,value);
+replace_right_node = binary_tree_node(parent, value);
 
 if (replace_right_node == NULL)
 return (NULL);
 
 if (parent->right != NULL)
 {
-replace_right_node->right = parent ->right;
-parent->right->parent = replace_right_node;
+	replace_right_node->right = parent->right;
+	parent->right->parent = replace_right_node;
 }
 parent->right = replace_right_node;
 
