@@ -16,5 +16,3 @@ binary_tree_postorder(tree->right, func);
 func(tree->n);
 }
 }
-
-
