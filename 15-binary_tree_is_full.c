@@ -21,5 +21,5 @@ int binary_tree_is_full(const binary_tree_t *tree)
 	{
 		return (1);
 	}
-	return (binary_tree_is_full);
+	return (binary_tree_is_full(tree));
 }
