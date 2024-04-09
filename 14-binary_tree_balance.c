@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+#include "binary_tree_height"
 
 /**
  * binary_tree_balance - fction to equi right and left
