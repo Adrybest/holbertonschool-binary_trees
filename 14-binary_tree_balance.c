@@ -16,15 +16,15 @@ int right_height = 0;
 if (tree == NULL)
 return (0);
 
- if (tree->left)
-   {
-     left_height = binary_tree_height(tree->left);
-     left_height++;
-   }
- if (tree->right)
-   {
-     right_height = binary_tree_height(tree->right);
-     right_height++;
-   }
- return (left_height - right_height);
+if (tree->left)
+{
+left_height = binary_tree_height(tree->left);
+left_height++;
+}
+if (tree->right)
+{
+right_height = binary_tree_height(tree->right);
+right_height++;
+}
+return (left_height - right_height);
 }
