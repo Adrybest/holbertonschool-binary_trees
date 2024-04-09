@@ -13,11 +13,4 @@ if (tree == NULL)
 {
 }
 
-binary_tree_postorder(tree->left, func);
-binary_tree_postorder(tree->right, func);
 
-if (func != NULL)
-{
-func(tree->n);
-}
-}
