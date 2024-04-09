@@ -7,11 +7,6 @@
 
 int binary_tree_is_full(const binary_tree_t *tree)
 {
-	if (tree == NULL)
-	{
-		return (1);
-	}
-
 	if (tree != NULL)
 	{
 		if ((tree->left != NULL && tree->right == NULL) ||/*lookif left exist*/
@@ -21,4 +16,10 @@ int binary_tree_is_full(const binary_tree_t *tree)
 		return (0);
 	}
 	return (1);
+
+	if (tree == NULL)
+	{
+		return (1);
+	}
+	return (binary_tree_is_full);
 }
