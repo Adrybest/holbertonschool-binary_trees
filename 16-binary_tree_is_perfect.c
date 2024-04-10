@@ -3,7 +3,7 @@
 #include "11-binary_tree_size.c"
 
 /**
- * binary_tree_is_perfect - fction 
+ * binary_tree_is_perfect - fction
  * @tree: root
  * Return: compare to see if tree is perfect
  */
@@ -11,10 +11,10 @@
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 int size;
-int height; 
+int height;
 int perfect_nodes = 1;
 int count_height;
-  
+
 if (tree == NULL)
 return (0);
 
