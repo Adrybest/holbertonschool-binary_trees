@@ -2,7 +2,7 @@
 /**
  * binary_tree_is_full -  function that checks if a binary tree is full
  * @tree: root
- * Return: 0
+ * Return: 1 if its complete else 0.
 */
 
 int binary_tree_is_full(const binary_tree_t *tree)
@@ -18,6 +18,11 @@ int binary_tree_is_full(const binary_tree_t *tree)
 		}
 	}
 	return (1);
+
+	if (tree->left == NULL && tree->right == NULL)
+	{
+		return (1);
+	}
 
 	if (tree == NULL)
 	{
