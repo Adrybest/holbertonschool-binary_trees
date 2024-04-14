@@ -19,5 +19,5 @@ return (0);
 height = binary_tree_height(tree);
 nodes = binary_tree_size(tree);
 
-return( nodes == (1 << (height + 1)) - 1);
+return (nodes == (1 << (height + 1)) - 1);
 }
