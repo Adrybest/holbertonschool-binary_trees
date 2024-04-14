@@ -10,22 +10,14 @@
 
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-int size;
-int height;
-int perfect_nodes = 1;
-int count_height;
+int height = 0;
+int nodes = 0;
 
 if (tree == NULL)
 return (0);
 
-size = binary_tree_size(tree);
 height = binary_tree_height(tree);
+nodes = binary_tree_size(tree);
 
-for (count_height = 0; count_height < height; count_height++)
-
-perfect_nodes *= 2;
-perfect_nodes -= 1;
-
-return (size == perfect_nodes);
-
+return( nodes == (1 << (height + 1)) - 1);
 }
